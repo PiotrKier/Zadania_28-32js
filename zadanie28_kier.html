@@ -1,0 +1,78 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title> Piotr Kierbedź 2P </title>
+<link rel="stylesheet" href="styl.css">
+</head>
+<body style="background-color: silver">
+<script type="text/javascript">
+function okno_zamknij()
+{
+window.close()
+}
+</script>
+<body>
+
+<h1>1. Rodzaje „filozofii” programowania.</h1>
+<ul>
+<li>Programowanie strukturalne</li>
+<li>Programowanie obiektowe</li>
+</ul>
+
+<h1>2. Opisz paradygmat programowania strukturalnego. Założenia programowania strukturalnego.</h1>
+<p><b>Programowanie strukturalne</b> – paradygmat programowania opierający się na podziale kodu źródłowego programu na procedury i hierarchicznie ułożone bloki z wykorzystaniem struktur kontrolnych w postaci instrukcji wyboru i pętli.
+Programowanie strukturalne zwiększa czytelność i ułatwia analizę programów, <br>
+co stanowi znaczącą poprawę w stosunku do trudnego w utrzymaniu „spaghetti code” <br>
+często wynikającego z użycia instrukcji goto.</p>
+
+<h4>Założenia programowania strukturalnego</h4>
+<ol type="1">
+<li>Podzielone bloki kodu mają jeden punkt wejścia,</li>
+<li>Wykonywanie wyrażeń w określonej kolejności,</li>
+<li>Używanie instrukcji warunkowych,</li>
+<li>Używanie pętli,</li>
+<li>Unikanie instrukcji skoku,</li>
+<li>Unikanie instrukcji break, continue,</li>
+<li>W programowaniu proceduralnym (strukturalne) funkcje i zmienne opisujące dany przedmiot nie są ze sobą powiązane.</li>
+</ol>
+
+<h1>3. Programowanie obiektowe: definicja.</h1>
+
+<h4>Opis programowania obiektowego</h4>
+<p>Programowanie obiektowe jest to podejście bardziej naturalne dla ludzi, 
+bardziej zgodne z rzeczywistością. W pamięci komputera tworzona jest wirtualna rzeczywistość. <br>
+Definiowane (powoływane są do wirtualnego życia w pamięci komputera) obiekty na podstawie wcześniej zdefiniowanych klas. <br>
+Obiekty mają zdefiniowane metody oraz pola.</p>
+
+<h4>Programowanie obiektowe definicja</h4>
+<p>Programowanie obiektowe (ang. object-oriented programming) — sposób programowania, w którym programy definiuje się za pomocą:</p>
+<ul>
+<li>obiektów (obiekty powoływane są do życia wirtualnego przez programistę, mogą być kasowane przez programistę) np. okienka w Windowsokienko jest obiektem,</li>
+<li>obiekt ma jakiś stan (czyli dane, w programowaniu obiektowym nazywane najczęściej polami) np. wielość okienka w Windows,</li>
+<li>obiekt wykazuje pewne zachowanie (czyli posiada pewne procedury w programowaniu obiektowym nazywane metody). Np. jest zdefiniowana metoda do zmiany wielkości okienka.</li>
+</ol>
+
+<h1>4. Dlaczego stosujemy programowanie obiektowe?</h1>
+
+<ul>
+<li>Jest to bardziej naturalne podejście przez programistę podczas tworzenia programów ponieważ otaczający nas świat to różnego rodzaju przedmioty. Tworząc program komputerowy dokonujemy pewnego ich odwzorowania rzeczywistości np. definiujemy obiekt samochód. Definiujemy pola czyli jego stan np. rok produkcji, marka, kolor. Definiujemy również metody czyli co umie np. hamowanie, przyśpieszanie. Definicja obiektu jego metod i pól znajduje się w klasie. Następnie na podstawie zdefiniowanego obiektu (może mieć pola oraz metody) powołujemy obiekt w pamięci wirtualnej</li>
+<li>Programowanie obiektowe pozwala na lepsze gospodarowanie pamięciom komputera, ponieważ gdy obiekt staje się zbędny możemy go usunąć co zwolni pamięć zajmowaną przez ten obiekt. W programowaniu strukturalnym aby zwalniać pamięć konieczne było stosowanie dynamicznych struktur danych np. stos czy kolejka.</li>
+<li>W programowaniu obiektowym dobrze napisana i przetestowana klasa pozwala na stosowaniu przez innych programistów. Zaoszczędza to czas i środki pieniężne.</li>
+</ul>
+<h1>5. Omów następujące pojęcia:</h1>
+
+<ul>
+<li>Klasa - rodzaj foremki, która opisuje nam jak będą wyglądać tworzone na jej podstawie nowe obiekty. Klasa jest to złożony typ będący opisem (definicją) obiektu/obiektów wraz z definicją pól i metod obiektów.</li>
+<li>Obiekt - Instancja (byt, twór) który powstał na podstawie klasy. Czyli Obiekty są konstrukcjami programistycznymi mającymi tak zwane właściwości (inaczej pola obiektu), którymi mogą być zmienne lub inne obiekty. Z obiektami powiązane są funkcje wykonujące operacje na ich właściwościach, nazywane metodami.</li>
+<li>Właściwość - Własność obiektu, np. kolor.</li>
+<li>Metoda - Zdolność (czynność) którą umie wykonywać obiekt, np. chodzenie (idź). Realizowane w postaci konstrukcji podobnej do funkcji.</li>
+<li>Konstruktor - Metoda wywoływana w momencie inicjalizacji obiektu. np. tworzymy obiekt a wraz z tworzeniem obiektu uruchomi się metoda, która nada np. Imię i Nazwisko.</li>
+<li>Destruktor - jest wywoływany automatycznie podczas niszczenia obiektów. Nie przyjmuje żadnych argumentów. W przeciwieństwie do konstruktorów, w klasie może być tylko jeden destruktor.</li>
+<li>Dziedziczenie - Klasa może dziedziczyć własności od innej klasy. Tworzymy klasę na podstawie innej klasy pobierając od „rodzica” właściwości i metody, może dopisać nowe pola i nowe metody.</li>
+<li>Hermetyzacja - Wewnątrz ciała klasy znajdują się pola i metody. Część pól i metod można odpowiednio ukryć przed "zewnętrznym światem" klasy tak jak to ma miejsce z przedmiotami ze świata rzeczywistego.</li>
+<li>Polimorfizm - Polimorfizm czyli wielopastaciowość. Oznacza to, że dany obiekt może zmieniać swoją postać w zależności od potrzeb. Może to być realizowane w formie metody wywoływanej z różną ilością parametrów. Tak więc utorzony obiekt może być traktowany polimorficznie bo zachowuje się różnie w zależności od sposobu uruchamiania jego metody.</li>
+</ul>
+<br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</body>
+</html>

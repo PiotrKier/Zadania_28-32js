@@ -1,0 +1,42 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title> Piotr Kierbedź 2P </title>
+<link rel="stylesheet" href="styl.css">
+<script type="text/javascript">
+function okno_zamknij()
+{
+window.close()
+}
+			function spodnie(marka,typ,cena,kolor)
+			{
+				this.marka=marka;
+				this.typ=typ;
+				this.cena=cena;
+				this.kolor=kolor;
+			}
+		spodnie.prototype.wypisz=function()
+			{
+				alert(this.marka+' '+this.typ+' '+this.cena);
+			}
+				var produkt1 = new spodnie("Wrangler","Jeansy","230zł","szare");
+				var produkt2 = new spodnie("Luxed","Garniturowe","329zł","granatowe");
+				var produkt3 = new spodnie("Luxed","Sztruksy","269zł","brązowe");
+				
+				produkt1.wypisz();
+				produkt2.wypisz();
+				produkt3.wypisz();
+				
+				document.write("Wypisane produkty:"+"<br>");
+				
+				document.write("Pierwsze spodnie"+" "+produkt1.marka+" "+produkt1.typ+" "+produkt1.cena+" "+produkt1.kolor+"<br>");
+				document.write("Drugie spodnie"+" "+produkt2.marka+" "+produkt2.typ+" "+produkt2.cena+" "+produkt2.kolor+"<br>");
+				document.write("Trzecie spodnie"+" "+produkt3.marka+" "+produkt3.typ+" "+produkt3.cena+" "+produkt3.kolor+"<br>");
+</script>
+</head>
+<body>
+
+<br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</body>
+</html>

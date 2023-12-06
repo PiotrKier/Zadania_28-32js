@@ -1,0 +1,31 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title> Piotr Kierbedź 2P </title>
+<link rel="stylesheet" href="styl.css">
+<script type="text/javascript">
+function okno_zamknij()
+{
+window.close()
+}
+var spodnie = {
+				marka:'Wrangler',
+				material:'Włókna bawełniane',
+				cena:'150zł',
+				spodnie_wyświetl_kierbedź:function()
+				{
+					document.write(this.marka+''+this.material+''+this.cena)
+				}
+			}
+			spodnie.spodnie_wyświetl_kierbedź();
+			spodnie.rozmiar=45;
+			spodnie.wypisz=function(){alert('Rozmiar:'+this.rozmiar)};
+			spodnie.wypisz();
+</script>
+</head>
+<body>
+
+<br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</body>
+</html>
